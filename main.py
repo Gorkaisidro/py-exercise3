@@ -38,8 +38,7 @@ def multiplication_table():
 
 
 def basic_calculator():
-   while True:
-        try:
+
             num1 = float(input("Enter the first number: "))
             operator = input("Enter an operator (+, -, *, /): ")
             num2 = float(input("Enter the second number: "))
@@ -51,20 +50,12 @@ def basic_calculator():
                 result = num1 - num2
             elif operator == '*':
                 result = num1 * num2
-            elif operator == '/':
-                result = num1 / num2
+            elif operator == '/':                    
+                  result = num1 / num2
             else:
                 print("Operador no válido. Inténtalo de nuevo.")
-                continue  # Volver a solicitar la entrada
 
             print(f"{num1} {operator} {num2} => Result: {result}")
-            break  # Salir del bucle mientras si la operación se realiza con éxito
-
-        except ValueError:
-   
-          print("Error: Ingresa números válidos. Inténtalo de nuevo.")
-
-          print("{num1} {operator} {num2} => Result:", result)
 
 
 def main():
